@@ -1,0 +1,61 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Groovy specific
+*.groovy.swp
+*.goutputstream-*
+
+# IDE and Editor settings
+.idea/
+*.iml
+*.ipr
+*.iws
+*.vscode/
+
+# macOS and system files
+.DS_Store
+Thumbs.db
+
+# Gradle specific
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven specific
+target/
+*.log
+
+# Dependency caches
+**/.gradle/
+**/build/
+**/.mvn/
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Test and coverage reports
+/test-results/
+/coverage/
+/.nyc_output/
+
+# Generated files
+/out/
+/bin/
+/lib/
+*.pid
+*.seed
+
+# Secrets and Credentials
+.env
+*.key
+*.pem
+*.p12
+*.crt
+*.env

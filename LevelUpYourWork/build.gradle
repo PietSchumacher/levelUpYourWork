@@ -1,0 +1,32 @@
+plugins {
+    id 'groovy'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'org.levelUpYourWork'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.14'
+    implementation 'org.codehaus.griffon:griffon-core:2.16.0'
+    implementation 'org.codehaus.griffon:griffon-javafx:2.16.0' // Für JavaFX
+    implementation 'org.codehaus.griffon:griffon-swing:2.16.0'  // Für Swing
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+javafx {
+    modules = [ 'javafx.controls' ]
+}
+
+mainClassName = 'MainApp'
+
+test {
+    useJUnitPlatform()
+}
